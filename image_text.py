@@ -37,7 +37,7 @@ def extract_text_from_image(image_source, source_type="url"):
 def analyze_with_ai(text):
     try:
         llm = ChatGoogleGenerativeAI(
-            model="gemini-pro",
+            model="gemini-1.5-flash",
             temperature=0,
             google_api_key=GOOGLE_API_KEY  # Using the hardcoded key
         )
